@@ -1,8 +1,36 @@
-.attribution {
-    display: none;
-    font-size: 11px;
-    text-align: center;
+html, body {
+    height: 100%;
 }
-.attribution a {
-    color: hsl(228, 45%, 44%);
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page {
+    width: 600px;
+    height: 450px;
+
+    display: flex;
+}
+
+div div {
+    width: 50%;
+    height: 450px;
+  
+}
+
+#product_img {
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#product {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
 }
