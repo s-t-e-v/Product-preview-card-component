@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+}
+
+
+
 html, body {
     height: 100%;
 }
 
 
 body {
+    font-family: 'Montserrat', sans-serif;
+
+
     background-color: hsl(30, 38%, 92%);
 
     display: flex;
@@ -33,4 +47,8 @@ div div {
 #product {
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 10px 10px 0;
+}
+
+.actual_price, h2 {
+    font-family: 'Fraunces', sans-serif;
 }
