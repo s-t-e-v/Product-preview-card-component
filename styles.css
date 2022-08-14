@@ -9,10 +9,9 @@
     src: url('Fraunces/fraunces-variablefont_softwonkopszwght-webfont.woff2') format('woff2');
    }
 
-
-
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 
@@ -50,7 +49,22 @@ div div {
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 10px 10px 0;
     box-sizing: border-box;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#prod_container {
+    width: 240px;
+    height: 390px;
+
+    margin: 0;
+    padding: 0;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .actual_price, h1 {
@@ -71,8 +85,17 @@ p {
     color: hsl(228, 12%, 48%);
 }
 
+#product_type {
+    letter-spacing: .3rem;
+}
+
+#description {
+    line-height: 1.6;
+}
+
 a {
     display: block;
+
     height: 100%;
     width: 100%;
     
@@ -88,6 +111,75 @@ a {
     padding: 15px;
 }
 
+#prod_container p, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.actual_price, .old_price {
+    display: inline-block;
+
+}
+
+
 a:hover {
     background-color: #1a4031;
+}
+
+a img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #page {
+        width: 344px;
+        height: 610px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    div div {
+        width: 344px;      
+    }
+
+    #product_img {
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: 100% 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 240px;
+    }
+
+    #product {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 0 10px 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 370px;
+    }
+
+    #prod_container {
+        width: 300px;
+        height: 320px;
+    
+        margin: 0;
+        padding: 0;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
 }
