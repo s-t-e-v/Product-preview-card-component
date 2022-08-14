@@ -4,8 +4,10 @@
 }
 @font-face {
     font-family: 'Fraunces';
-    src: url('Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
-}
+    src: url('Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('ttf');
+    src: url('Fraunces/fraunces-variablefont_softwonkopszwght-webfont.woff') format('woff');
+    src: url('Fraunces/fraunces-variablefont_softwonkopszwght-webfont.woff2') format('woff2');
+   }
 
 
 
@@ -16,7 +18,7 @@ html, body {
 
 body {
     font-family: 'Montserrat', sans-serif;
-
+    font-size: 14px;
 
     background-color: hsl(30, 38%, 92%);
 
@@ -33,7 +35,7 @@ body {
 }
 
 div div {
-    width: 50%;
+    width: 300px;
     height: 450px;
   
 }
@@ -47,8 +49,45 @@ div div {
 #product {
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    padding: 30px;
 }
 
-.actual_price, h2 {
+.actual_price, h1 {
     font-family: 'Fraunces', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+}
+
+.actual_price {
+    color: hsl(158, 36%, 37%);
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+a:hover {
+    background-color: #1a4031;
 }
