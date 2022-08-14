@@ -141,8 +141,8 @@ a img{
     vertical-align: middle;
 }
 
-
-@media screen and (max-width: 600px) {
+/* media queries for all type of width screen <= 600px OR mobile phones*/
+@media all and (max-width: 600px), all and (max-device-width: 480px) {
 
     #page {
         width: 344px;
