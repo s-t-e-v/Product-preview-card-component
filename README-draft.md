@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/home/steven/Documents/product-preview-card-component-main/screenshot.jpg)
+![](screenshot.jpg)
 
 ### Links
 
