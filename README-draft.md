@@ -43,10 +43,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
@@ -73,6 +69,12 @@ const proudOfThisFunc = () => {
 }
 ```
 
+**Commenting in CSS and HTML**
+*CSS*
+
+
+*HTML*
+
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
@@ -85,23 +87,19 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-*Draft of useful resources:*
+The resources bellow gave me the necessary knowledge to do this project:
 
-- Commenting in css: Google search "comment css"
-- "OR" conditions for CSS media queries: https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height, https://css-tricks.com/logic-in-css-media-queries/
-- Avoiding scrollbar to be displayed when body height set to 100%: https://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar
-- Create webfont kit: https://www.fontsquirrel.com/tools/webfont-generator
-- Vertically align text to an image: https://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image#:~:text=Using%20flex%20property%20in%20css,justify%2Dcontent%3Acenter%3B%20.
-- letter-spacing: https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
-- HTML/CSS cours (Openclassrom): https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3
-- Effect of borders on box size css: https://stackoverflow.com/questions/9102900/css-outside-border
-- How to avoid css padding overrides overflow: https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow
-- Using 'gap' property to put space between flex items: https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- Google search "comment css": A quick search on Google helped to remember how to comment in CSS.
+- [Stackoverflow - CSS media queries: max-width OR max-height](https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height)): This Stackoverflow Q & A helped to figure out how to combine media queries with "OR" conditions using the good syntax.
+- [Logic in CSS Media Queries (If / Else / And / Or / Not) ](https://css-tricks.com/logic-in-css-media-queries/): This helped me, in the sense that it confirmed to me that it was possible to make "OR" conditions with media queries.
+- [Body height 100% displaying vertical scrollbar](https://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar): This Q & A helped to get rid of the scrollbar displayed when body height set to 100%. I discovered the impact of <html> and <body> tags on these issues. 
+- [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator): This website is very good to generate all formats of webfont to ensure compatibility with browsers.
+- [Stackoverflow - Vertically align text next to an image?](https://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image#:~:text=Using%20flex%20property%20in%20css,justify%2Dcontent%3Acenter%3B%20): It helped me to vertically align the "Add to cart" text to the cart logo.
+- [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing): This web page was the reason I succeeded to letter-space the "PERFUME" header.
+- [Openclassroms - HTML5/CSS3 course](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3): All the fundamentals of HTML/CSS page building, especially Flexbox, I acquired them from this wonderful website. This course is in French, but others courses are English. I really recommend, well written.
+- [CSS Outside Border](https://stackoverflow.com/questions/9102900/css-outside-border): This Stackoverflow Q & A helped  me to understand the effect of borders on the box sizes in CSS.
+- [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): This Stackoverflow Q & A was **key** to complete this project. He helped me to tame the flex items inside a box, so it stays inside instead of overflowing, thanks to the CSS code *box-sizing: border-box*.
+- [Better way to set distance between flexbox items](https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items): This encourages me to use 'gap' property to put space between flex items.
 
 ## Author
 
