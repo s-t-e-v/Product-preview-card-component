@@ -90,7 +90,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Commenting in css: Google search "comment css"
 - "OR" conditions for CSS media queries: https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height, https://css-tricks.com/logic-in-css-media-queries/
 - Avoiding scrollbar to be displayed when body height set to 100%: https://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar
-- create webfont: https://www.fontsquirrel.com/tools/webfont-generator
+- Create webfont kit: https://www.fontsquirrel.com/tools/webfont-generator
+- Vertically align text to an image: https://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image#:~:text=Using%20flex%20property%20in%20css,justify%2Dcontent%3Acenter%3B%20.
+- letter-spacing: https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+- HTML/CSS cours (Openclassrom): https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3
+- Effect of borders on box size css: https://stackoverflow.com/questions/9102900/css-outside-border
+- How to avoid css padding overrides overflow: https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow
+- Using 'gap' property to put space between flex items: https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
