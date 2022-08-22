@@ -51,6 +51,19 @@ Users should be able to:
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
+**Equaly space inside a box while keeping elements inside**
+
+**paragraph, headers with no space around**
+
+**Making a button linking to an url**
+
+**Media queries for all type of devices and smartphone**
+
+**Using Gimp to dermine the size of elements**
+
+**Using different fonts to beautify a Website**
+I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and using only one font within the document. It makes sens to do this, because using multiple fonts can become a mess quickly and reports are more focus on content rather than form. However, for web design, it can be interesting to use more than one font if choose wisely. Maybe using too many fonts can also be bad, but using only one makes the website less beautiful, *a priori*.
+
 To see how you can add code snippets, see below:
 
 ```html
@@ -80,6 +93,10 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
+
+- would like to use flexbox with more elegance
+- would like to train my self to use the other layout method (position: absolute, relative; inline-block, etc.), because sometimes I feel flexbox don't give all the flexibility I want during my designing process
+- would like to better myself in structuring html file: no useless "id", "class", "div", better choice in tag. I feel the way I strutured my html isn't the most optimal
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
