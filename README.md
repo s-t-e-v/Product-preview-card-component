@@ -26,17 +26,15 @@ Users should be able to:
 
 ### Screenshots
 
-**Normal state**
-
 ![](screenshot.jpg)
 
 **Small screen state**
 
-![](screenshot2.jpg)
+[Screenshot](screenshot2.jpg)
 
 **Button in hovering state**
 
-![](screenshot3.jpg)
+[Screenshot](screenshot3.jpg)
 
 ### Links
 
