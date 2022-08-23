@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/s-t-e-v/Product-preview-card-component)
+- Solution URL: [Github Project](https://github.com/s-t-e-v/Product-preview-card-component)
 - Live Site URL: [Github Web page](https://s-t-e-v.github.io/Product-preview-card-component)
 
 ## My process
@@ -164,7 +164,7 @@ Gimp helped me a lot in determining the size of elements. Thankfully I had very 
 
 #### Using different fonts to beautify a Website
 
-I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and using only one font within the document. Good to know for future web design.
+I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and this by using only one font within the document. Good to know that for future web design projects.
 
 #### Commenting in CSS
 Very basic skill but I learned to do it during the project. 
@@ -173,35 +173,36 @@ Very basic skill but I learned to do it during the project.
 /*comments*/
 ```
 
-It is good to read how to comment in a course, but you really learn to do it **when** you actually do it.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+It is good to read how to comment by reading/watching a course, but you really learn to do it **when** you actually do it.
 
 ### Continued development
 
-- would like to use flexbox with more elegance
-- would like to train my self to use the other layout method (position: absolute, relative; inline-block, etc.), because sometimes I feel flexbox don't give all the flexibility I want during my designing process
-- would like to better myself in structuring html file: no useless "id", "class", "div", better choice in tag. I feel the way I strutured my html isn't the most optimal
-- would like to write less CSS code
+In future projects, I would like to focus one at least one of these areas:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Drafting README file while doing the project. Saving useful links during the coding process. So I don't have to struggle recalling the hows and whys
+- Commenting my CSS code, so I can understand my code when I return to it several days later
+- Using flexbox with more elegance
+- Custom fonts integration: I feel like I am not in full control of font-weight, font-size, and also of how it is displayed in different browsers
+- Mastering other layout method (`position: absolute`,  `relative`; inline-block, etc.). Because sometimes I feel flexbox don't give all the flexibility I want during my design process.
+- Understanding more how boxes, text, block and inline are structured, designed, so I can better arrange elements
+- Structuring html file more efficiently: no useless "id", "class", "div". Also, better choice in tags. I feel the way I strutured my html isn't the most optimal.
+- Writing lesser amount of CSS code
+- Using media queries to be comfortable with.
 
 ### Useful resources
 
 The resources bellow gave me the necessary knowledge to do this project:
 
 - Google search "comment css": A quick search on Google helped to remember how to comment in CSS.
-- [Stackoverflow - CSS media queries: max-width OR max-height](https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height)): This Stackoverflow Q & A helped to figure out how to combine media queries with "OR" conditions using the good syntax.
+- [Stackoverflow - CSS media queries: max-width OR max-height](https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height)): This Stackoverflow Q & A helped me to figure out how to combine media queries with "OR" conditions using the good syntax.
 - [Logic in CSS Media Queries (If / Else / And / Or / Not) ](https://css-tricks.com/logic-in-css-media-queries/): This helped me, in the sense that it confirmed to me that it was possible to make "OR" conditions with media queries.
-- [Body height 100% displaying vertical scrollbar](https://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar): This Q & A helped to get rid of the scrollbar displayed when body height set to 100%. I discovered the impact of <html> and <body> tags on these issues. 
+- [Body height 100% displaying vertical scrollbar](https://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar): This Q & A helped me to get rid of the scrollbar displayed when body height is set to 100%. I discovered the impact of <html> and <body> tags on these issues. 
 - [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator): This website is very good to generate all formats of webfont to ensure compatibility with browsers.
 - [Stackoverflow - Vertically align text next to an image?](https://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image#:~:text=Using%20flex%20property%20in%20css,justify%2Dcontent%3Acenter%3B%20): It helped me to vertically align the "Add to cart" text to the cart logo.
 - [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing): This web page was the reason I succeeded to letter-space the "PERFUME" header.
 - [Openclassroms - HTML5/CSS3 course](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3): All the fundamentals of HTML/CSS page building, especially Flexbox, I acquired them from this wonderful website. This course is in French, but others courses are English. I really recommend, well written.
-- [CSS Outside Border](https://stackoverflow.com/questions/9102900/css-outside-border): This Stackoverflow Q & A helped  me to understand the effect of borders on the box sizes in CSS.
-- [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): This Stackoverflow Q & A was **key** to complete this project. He helped me to tame the flex items inside a box, so it stays inside instead of overflowing, thanks to the CSS code `box-sizing: border-box`.
+- [CSS Outside Border](https://stackoverflow.com/questions/9102900/css-outside-border): This Stackoverflow Q & A helped me to understand the effect of borders on box size in CSS.
+- [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): This Stackoverflow Q & A was **key** to complete this project. He helped me to tame the flex items in a box, so it stays inside instead of overflowing, thanks to the CSS code `box-sizing: border-box`.
 - [Better way to set distance between flexbox items](https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items): This encourages me to use 'gap' property to put space between flex items.
 
 ## Author
