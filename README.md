@@ -1,92 +1,239 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Product preview card component solution
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshots
 
-## Where to find everything
+**Normal state**
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+![](screenshot.jpg)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+**Small screen state**
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+![](screenshot2.jpg)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+**Button in hovering state**
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+![](screenshot3.jpg)
 
-## Building your project
+### Links
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Solution URL: [Github Project](https://github.com/s-t-e-v/Product-preview-card-component)
+- Live Site URL: [Github Web page](https://s-t-e-v.github.io/Product-preview-card-component)
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## My process
 
-## Deploying your project
+### Built with
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+- Semantic HTML5 markup
+- CSS3 custom properties
+- Flexbox
+- [Design files to download](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-aNIJgOsOaS) - For styles
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### What I learned
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Below are the major things I learned throughout this project.
 
-## Create a custom `README.md`
+#### Centering with flex + margin: auto
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+I don't know why I was skeptical about with this way of doing, but it's simple and very efficient:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```css
+body {
+	/*some code above*/
+    
+    display: flex;
+}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```css
+#page {
+   /*some code above*/
 
-## Submitting your solution
+    margin: auto;
+    
+    /*some code bellow*/
+}
+```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+With this, `#page` and all of what it contains is centered horizontally and vertically
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+It also helped to easily bottom center `.attribution`. Before that I was using a combination of `display: flex` + `justify-content: center` + `align-items: center` in `body`, which complicated `.attribution` bottom centering.
 
-## Sharing your solution
+#### Equally space elements in a box while maintaining all of them inside
 
-There are multiple places you can share your solution:
+The combo of flexbox + box-sizing was what enabled me to achieve the intended result:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+**Box-sizing**:
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+```css
+#product {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+**Flexbox**:
 
-## Got feedback for us?
+```css
+#prod_container {
+    width: 240px;
+    height: 390px;
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+    margin: 0;
+    padding: 0;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+```
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+`#prod_container` contains the text describing the product and the "add to cart" button.
 
-**Have fun building!** 🚀
+`#product` contains `#prod_container`, gives the frame shape and background color.
+
+`#product` has actually a 300px width size. `border-sizing` set to *border-box* makes the elements inside `#prod_container` not overflowing. And in `#prod_container`, the property `justify-content` is set to *space-between*, so elements are equally spaced between each other.
+
+
+#### Paragraphs, headers with no space around
+
+I had issues with paragraphs and headers inside `#prod_container`, because by default, there is some space around these two types of HTML elements. Writing the bellow in the CSS code resolved the issue:
+
+```css
+#prod_container p, h1 {Paragraphs, headers with no space around
+    padding: 0;
+    margin: 0;
+}
+```
+
+In the future, I will use that trick or a better one.
+
+#### Making a button linking to a URL
+
+I found it impressive how a HTML link tag can be transformed into a button. Over here is how I designed the button:
+
+```css
+a {
+    display: block;
+    
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    padding: 15px;
+}
+```
+
+To do so, it was important to:
+
+- convert the tag from inline to block element via the `display` property.
+- set `text-decoration` to *none*
+
+with this, no underline is displayed with the link. And I can make it behaves like the other elements in `#prod_container` which are all block type and set its appearance to a button with `border-radius`, `background-color`, etc.
+
+#### Set the image size to the background one
+
+```css
+#product_img {
+	background-image: url("images/image-product-mobile.jpg");
+	background-size: 100% 100%;
+}
+```
+
+The `background-size` line is the code that make it works. Otherwise, we just see a part of the image if the later is too large compare to its container.
+
+#### Media queries for all type of devices and smartphone
+
+I learned how to use media queries, so the website displayed the optimal layout depending of the screen size, whether it is on pc or smartphone.
+
+```css
+@media all and (max-width: 600px), all and (max-device-width: 480px) {
+	...
+}
+```
+
+Inside, I just have to rewrite how HTML elements display within the `@media` block. Not all the CSS code. Just the ones that needed to change when the width screen is so small that we have to scroll horizontally. No need to rewrite everything.
+
+#### Using GIMP to determine the size of elements
+
+GIMP helped me a lot in determining the size of elements. Thankfully I had very basic knowledge about that software.
+
+#### Using different fonts to beautify a Website
+
+I haven't realized until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and this by applying only one to the document. Good to know that for future web design projects.
+
+#### Commenting in CSS
+Very basic skill, but I learned to do it during the project. 
+
+```css
+/*comments*/
+```
+
+It is good to read/watch courses on how to comment, but you really learn to do it **when** you actually do it.
+
+### Continued development
+
+In future projects, I would like to focus one at least one of these areas:
+
+- Drafting README file while doing the project. Saving useful links during the coding process. So I don't have to struggle recalling the hows and whys.
+- Commenting my CSS code, so I can understand my code when I return to it several days later.
+- Using flexbox with more elegance
+- Using Git/Github in a more efficient. Especially by using branches.
+- Custom fonts integration: I feel like I am not in full control of font-weight, font-size, and also of how it is displayed in different browsers.
+- Mastering other layout method (`position: absolute`, `relative`; inline-block, etc.). Because sometimes I feel flexbox doesn't give all the flexibility I want during my design process.
+- Understanding more about how text, block, etc. are structured and designed. So I can better arrange elements.
+- Structuring HTML file more efficiently: no useless "id", "class", "div". Also better choice in tags. I feel the structure of my HTML isn't optimal.
+- Writing lesser amount of CSS code
+- Using media queries to be comfortable with.
+
+### Useful resources
+
+The resources bellow gave me the necessary knowledge to complete this project:
+- Google search "comment css": A quick search on Google helped to remember how to comment in CSS.
+- [Stackoverflow - CSS media queries: max-width OR max-height](https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height)): This Stackoverflow Q&A helped me to figure out how to combine media queries with "OR" conditions using the good syntax.
+- [Logic in CSS Media Queries (If / Else / And / Or / Not) ](https://css-tricks.com/logic-in-css-media-queries/): This helped me, in the sense that it confirmed to me that it was possible to make "OR" conditions with media queries.
+- [Body height 100% displaying vertical scrollbar](https://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar): This Q&A helped me to get rid of the scrollbar displayed when body height is set to 100%. I discovered the impact of `<html>` and `<body>` tags on these issues. 
+- [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator): This website is very good to generate all formats of web font to ensure compatibility with browsers.
+- [Stackoverflow - Vertically align text next to an image?](https://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image#:~:text=Using%20flex%20property%20in%20css,justify%2Dcontent%3Acenter%3B%20): It helped me to vertically align the "Add to cart" text to the cart logo.
+- [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing): This web page was the reason I succeeded to letter-space the "PERFUME" header.
+- [Openclassroms - HTML5/CSS3 course](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3): All the fundamentals of HTML/CSS page building, especially Flexbox, I acquired them from this wonderful website. This course is in French, but some others are in English. I really recommend, well written.
+- [CSS Outside Border](https://stackoverflow.com/questions/9102900/css-outside-border): This Stackoverflow Q&A helped me to understand the effect of borders on box size in CSS.
+- [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): TThis Stackoverflow Q&A was **key** to complete the project. He helped me to tame the flex items in a box, so it stays inside instead of overflowing, thanks to the CSS code `box-sizing: border-box`.
+- [Better way to set distance between flexbox items](https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items): This encourages me to use "gap" property to put space between flex items.
+- [“position absolute bottom center” Code Answer’s](https://www.codegrepper.com/code-examples/css/position+absolute+bottom+center): Helped me to bottom center the *attribution* `<div>`.
+
+## Author
+
+- Github - [s-t-e-v](https://github.com/s-t-e-v)
+- Frontend Mentor - [@s-t-e-v](https://www.frontendmentor.io/profile/s-t-e-v)
