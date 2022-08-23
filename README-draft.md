@@ -14,9 +14,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -37,6 +34,10 @@ Users should be able to:
 
 ![](screenshot2.jpg)
 
+**Hovering button state**
+
+![](screenshot3.jpg)
+
 ### Links
 
 - Solution URL: [Github](https://github.com/s-t-e-v/Product-preview-card-component)
@@ -49,15 +50,11 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS3 custom properties
 - Flexbox
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Design files to download](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-aNIJgOsOaS) - For styles
 
 ### What I learned
 
 Below are the things I learned throughout this project.
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 #### Equally space elements in a box while keeping elements inside
 
@@ -167,7 +164,7 @@ Gimp helped me a lot in determining the size of elements. Thankfully I had very 
 
 #### Using different fonts to beautify a Website
 
-I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and using only one font within the document. It makes sens to do this, because using multiple fonts can become a mess quickly and reports are more focus on content rather than form. However, for web design, it can be interesting to use more than one font if choose wisely. Maybe using too many fonts can also be bad, but using only one makes the website less beautiful, *a priori*.
+I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and using only one font within the document. Good to know for future web design.
 
 #### Commenting in CSS
 Very basic skill but I learned to do it during the project. 
@@ -209,14 +206,5 @@ The resources bellow gave me the necessary knowledge to do this project:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Github - [s-t-e-v](https://github.com/s-t-e-v)
+- Frontend Mentor - [@s-t-e-v](https://www.frontendmentor.io/profile/s-t-e-v)
