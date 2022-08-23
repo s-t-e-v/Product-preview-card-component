@@ -6,7 +6,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,9 +27,15 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-### Screenshot
+### Screenshots
+
+**Normal state**
 
 ![](screenshot.jpg)
+
+**Small screen state**
+
+![](screenshot2.jpg)
 
 ### Links
 
@@ -41,7 +47,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS3 custom properties
 - Flexbox
 - [Styled Components](https://styled-components.com/) - For styles
 
@@ -49,46 +55,128 @@ Users should be able to:
 
 ### What I learned
 
+Below are the things I learned throughout this project.
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-**Equaly space inside a box while keeping elements inside**
+#### Equally space elements in a box while keeping elements inside
 
-**paragraph, headers with no space around**
+The combo of flexbox + box-sizing was what enabled me to achieve the intented results:
 
-**Making a button linking to an url**
-
-**Media queries for all type of devices and smartphone**
-
-**Using Gimp to dermine the size of elements**
-
-**Using different fonts to beautify a Website**
-I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and using only one font within the document. It makes sens to do this, because using multiple fonts can become a mess quickly and reports are more focus on content rather than form. However, for web design, it can be interesting to use more than one font if choose wisely. Maybe using too many fonts can also be bad, but using only one makes the website less beautiful, *a priori*.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+**Box-sizing**:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#product {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+**Flexbox**:
+
+```css
+#prod_container {
+    width: 240px;
+    height: 390px;
+
+    margin: 0;
+    padding: 0;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 ```
 
-**Commenting in CSS and HTML**
-*CSS*
+`#prod_container` contains the text describing the product and the button to 'add to cart'. 
 
+`#product` contains `#prod_container`, gives the frame shape and background color. 
 
-*HTML*
+`#product` has actually a 300px width size. `border-sizing` set to *border-box* makes the elements inside `#prod_container` not overflowing. And inside `#prod_container`, the property `justify-content` is to *space-between*, so elements inside are equally spaced between each other.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+#### Paragraph, headers with no space around
+
+I had issues with paragraphs and headers inside `#prod_container`, because by default, there is some space around these two types of html elements. Writing the bellow in the CSS code solved the issue:
+
+```css
+#prod_container p, h1 {
+    padding: 0;
+    margin: 0;
+}
+```
+
+In the future, I will use that trick, or a better one.
+
+#### Making a button linking to an url
+
+I found it mpressive how a html link tag can be transforme into a button. Here is how I designed the button:
+
+```css
+a {
+    display: block;
+    
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    padding: 15px;
+}
+```
+
+To do so, it was important to:
+
+- transform the tag from inline to block elements with the `display` property.  
+- set `text-decoration` to *none* 
+
+with this, no underline is displayed with the link and I can make it behave like the other elements in `#prod_container` which are all block elements, and make it looks like a button with `border-radius`, `background-color`, etc.
+
+#### Set the image size to the background size
+
+```css
+#product_img {
+	background-image: url("images/image-product-mobile.jpg");
+	background-size: 100% 100%;
+}
+```
+
+The `background-size` line is the code that make it works, otherwise, we just see a part of the image if the later is too large compare to its container.
+
+#### Media queries for all type of devices and smartphone
+
+I learned how to use media queries so the website displayed the optimal layout depending of the screen size, whether it is on pc or smarthpone.
+
+```css
+@media all and (max-width: 600px), all and (max-device-width: 480px) {
+	...
+}
+```
+
+Inside, I just have to rewrite how html elements display inside the `@media` block. Not all the CSS code, just the ones that needed to change when the width screen is so small that we have to scroll horizontally. No need to rewrite everything.
+
+#### Using Gimp to determine the size of elements
+
+Gimp helped me a lot in determining the size of elements. Thankfully I had very basic knowledge about it.
+
+#### Using different fonts to beautify a Website
+
+I haven't realize until doing this project how fonts are a game changer in web design, and design in general. I am used to write reports, etc. with Time New Roman or equivalent fonts, and using only one font within the document. It makes sens to do this, because using multiple fonts can become a mess quickly and reports are more focus on content rather than form. However, for web design, it can be interesting to use more than one font if choose wisely. Maybe using too many fonts can also be bad, but using only one makes the website less beautiful, *a priori*.
+
+#### Commenting in CSS
+Very basic skill but I learned to do it during the project. 
+
+```css
+/*comments*/
+```
+
+It is good to read how to comment in a course, but you really learn to do it **when** you actually do it.
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 
@@ -97,6 +185,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - would like to use flexbox with more elegance
 - would like to train my self to use the other layout method (position: absolute, relative; inline-block, etc.), because sometimes I feel flexbox don't give all the flexibility I want during my designing process
 - would like to better myself in structuring html file: no useless "id", "class", "div", better choice in tag. I feel the way I strutured my html isn't the most optimal
+- would like to write less CSS code
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
@@ -115,7 +204,7 @@ The resources bellow gave me the necessary knowledge to do this project:
 - [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing): This web page was the reason I succeeded to letter-space the "PERFUME" header.
 - [Openclassroms - HTML5/CSS3 course](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3): All the fundamentals of HTML/CSS page building, especially Flexbox, I acquired them from this wonderful website. This course is in French, but others courses are English. I really recommend, well written.
 - [CSS Outside Border](https://stackoverflow.com/questions/9102900/css-outside-border): This Stackoverflow Q & A helped  me to understand the effect of borders on the box sizes in CSS.
-- [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): This Stackoverflow Q & A was **key** to complete this project. He helped me to tame the flex items inside a box, so it stays inside instead of overflowing, thanks to the CSS code *box-sizing: border-box*.
+- [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): This Stackoverflow Q & A was **key** to complete this project. He helped me to tame the flex items inside a box, so it stays inside instead of overflowing, thanks to the CSS code `box-sizing: border-box`.
 - [Better way to set distance between flexbox items](https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items): This encourages me to use 'gap' property to put space between flex items.
 
 ## Author
