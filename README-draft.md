@@ -54,7 +54,33 @@ Users should be able to:
 
 ### What I learned
 
-Below are the things I learned throughout this project.
+Below are the major things I learned throughout this project.
+
+#### Centering with flex + margin: auto
+
+I don't know why I was skeptical about with this way of doing but it's simple and very efficient:
+
+```css
+body {
+	/*some code above*/
+    
+    display: flex;
+}
+```
+
+```css
+#page {
+   /*some code above*/
+
+    margin: auto;
+    
+    /*some code bellow*/
+}
+```
+
+With this, `#page` and all of what it contains is centered horizontally and vertically
+
+It also helped to easily bottom center `.attribution`. Before that I was using a combination of `display: flex` + `justify-content: center` + `align-items: center` in `body`, which complicated `.attribution` bottom centering.
 
 #### Equally space elements in a box while keeping elements inside
 
@@ -204,6 +230,7 @@ The resources bellow gave me the necessary knowledge to do this project:
 - [CSS Outside Border](https://stackoverflow.com/questions/9102900/css-outside-border): This Stackoverflow Q & A helped me to understand the effect of borders on box size in CSS.
 - [CSS padding overrides overflow?](https://stackoverflow.com/questions/19051411/css-padding-overrides-overflow): This Stackoverflow Q & A was **key** to complete this project. He helped me to tame the flex items in a box, so it stays inside instead of overflowing, thanks to the CSS code `box-sizing: border-box`.
 - [Better way to set distance between flexbox items](https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items): This encourages me to use 'gap' property to put space between flex items.
+- [“position absolute bottom center” Code Answer’s](https://www.codegrepper.com/code-examples/css/position+absolute+bottom+center): Helped me to bottom center *attribution* <div>.
 
 ## Author
 
