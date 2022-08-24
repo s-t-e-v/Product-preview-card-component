@@ -88,12 +88,9 @@ The combo of flexbox + box-sizing was what enabled me to achieve the intended re
 
 ```css
 #product {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0 10px 10px 0;
+    /*some code above*/
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 ```
 
@@ -104,8 +101,7 @@ The combo of flexbox + box-sizing was what enabled me to achieve the intended re
     width: 240px;
     height: 390px;
 
-    margin: 0;
-    padding: 0;
+    margin: auto;
    
     display: flex;
     flex-direction: column;
@@ -125,7 +121,7 @@ The combo of flexbox + box-sizing was what enabled me to achieve the intended re
 I had issues with paragraphs and headers inside `#prod_container`, because by default, there is some space around these two types of HTML elements. Writing the bellow in the CSS code resolved the issue:
 
 ```css
-#prod_container p, h1 {Paragraphs, headers with no space around
+#prod_container p, h1 {
     padding: 0;
     margin: 0;
 }
@@ -138,7 +134,7 @@ In the future, I will use that trick or a better one.
 I found it impressive how a HTML link tag can be transformed into a button. Over here is how I designed the button:
 
 ```css
-a {
+.button a {
     display: block;
     
     color: hsl(0, 0%, 100%);

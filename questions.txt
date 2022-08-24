@@ -1,0 +1,7 @@
+Questions:
+
+- Does my use of flexbox need improvements? Should I had use other layouts method?
+- Does my use of 'id' in div makes sense or should I have used 'class' instead?
+- Does the way I structured my HTML file need improvements?
+- Did I write to much CSS code, and if so how can it be less?
+- Do you any other feedback?

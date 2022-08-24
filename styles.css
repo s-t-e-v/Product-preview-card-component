@@ -12,8 +12,8 @@
    }
 
 html, body {
-    height: 100%;
-    margin: 0;
+    height: 100%; /*necessary to make body contents centered*/
+    margin: 0; /*necessary to get rid of the scrollbar*/
 }
 
 
@@ -37,7 +37,7 @@ body {
 
     bottom: 30px;
 
-    /*centering left-right with absolute positioning*/
+    /*left-right centering with absolute positioning*/
     left: 0;
     right: 0;
     margin-left: auto;
@@ -74,17 +74,13 @@ div div {
     border-radius: 0 10px 10px 0;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 #prod_container {
     width: 240px;
     height: 390px;
 
-    margin: 0;
-    padding: 0;
+    margin: auto;
    
     display: flex;
     flex-direction: column;
