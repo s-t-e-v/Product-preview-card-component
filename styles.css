@@ -113,7 +113,7 @@ p {
     line-height: 1.6;
 }
 
-.button a {
+.button {
     display: block;
     
     color: hsl(0, 0%, 100%);
@@ -145,11 +145,11 @@ p {
 }
 
 
-.button a:hover {
+.button:hover {
     background-color: #1a4031;
 }
 
-.button a img{
+.button img{
     margin-right: 10px;
     vertical-align: middle;
 }
