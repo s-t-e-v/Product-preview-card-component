@@ -113,18 +113,19 @@ p {
     line-height: 1.6;
 }
 
-.button {
-    display: block;
-    
+button {   
     color: hsl(0, 0%, 100%);
     background-color: hsl(158, 36%, 37%);
     
     text-align: center;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     font-weight: bold;
 
     padding: 15px;
+
+    width: 100%;
 }
 
 .prod_container p, h1 {
@@ -144,12 +145,12 @@ p {
 
 }
 
-
-.button:hover {
+button:hover {
     background-color: #1a4031;
+    cursor: pointer;
 }
 
-.button img{
+button img{
     margin-right: 10px;
     vertical-align: middle;
 }

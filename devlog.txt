@@ -3,3 +3,16 @@
 How do you push just a single Git branch (and no other branches)?
 https://stackoverflow.com/questions/820178/how-do-you-push-just-a-single-git-branch-and-no-other-branches
 
+
+26/08/2022
+
+> 13:27
+
+Good news: we succeeded to make the button tag behave as previously, with the same previous button design
+
+We are facing several issues:
+    - cart icon should be in css instead of html
+    - the semantic HTML5 markup need improvments, restructure
+    - the footer is overlaps with the main page when the height is too small.
+      We need to make this not happen anymore, maybe by making the footer flex responsive, and
+      playing with shrink property
